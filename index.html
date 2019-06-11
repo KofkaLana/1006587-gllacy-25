@@ -1,12 +1,297 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>GllacyShop - Магазин мороженого</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+
+  <div class="container">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <div class="navigation-wrapper">
+          <a class="main-header-logo">
+            <img src="img/logo.svg" width="154" height="64" alt="Логотип">
+          </a>
+          <ul class="site-navigation">
+            <li>
+              <a href="">Каталог</a>
+              <ul class="sub-menu">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li class="sub-menu-current"><a>Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О Компании</a></li>
+          </ul>
+        </div>
+        <div class="user-navigation-wrapper">
+          <ul class="user-navigation">
+            <li><a class="search">Поиск</a></li>
+            <li><a class="login-link" href="login.html">Вход</a></li>
+            <li><a class="buy">Пусто</a></li>
+          </ul>
+          <span>С 10 до 20, ежедневно</span>
+          <span class="tel">8 812 450-25-25</span>
+        </div>
+
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Магазин мороженого</h1>
+      <section class="offers">
+        <!-- Тут будет листалка -->
+      </section>
+
+      <section class="promotion">
+        <h2 class="visually-hidden">Наши акции</h2>
+        <ul>
+          <li class="promo promo-1">
+            <h3>Малинка даром!</h3>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+            </p>
+            <a class="button" href="#">Хочу варенье!</a>
+          </li>
+          <li class="promo promo-2">
+            <h3>Шоколадки даром!</h3>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
+              бесплатно.
+            </p>
+            <a class="button" href="#">Хочу шоколадки!</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="hits">
+        <h2 class="visually-hidden">Наши хиты</h2>
+        <ul class="hits-list">
+          <li class="catalog-item hit">
+            <img class="icecreame" width="267" height="267" src="img/Icecreame-1.jpg"
+              alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p class="cost">
+              <span class="price">310₽</span><span class="weight">/кг</span>
+            </p>
+            <a>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </li>
+          <li class="catalog-item">
+            <img class="icecreame" width="267" height="267" src="img/Icecreame-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+            <p class="cost">
+              <span class="price">380₽</span><span class="weight">/кг</span>
+            </p>
+            <a>Сливочно-кофейное с кусочками шоколада</a>
+          </li>
+          <li class="catalog-item">
+            <img class="icecreame" width="267" height="267" src="img/Icecreame-3.jpg"
+              alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p class="cost">
+              <span class="price">355₽</span><span class="weight">/кг</span>
+            </p>
+            <a>Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </li>
+          <li class="catalog-item">
+            <img class="icecreame" width="267" height="267" src="img/Icecreame-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p class="cost">
+              <span class="price">415₽</span><span class="weight">/кг</span>
+            </p>
+            <a>Сливочное крем-брюле с карамельной подливкой</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="features">
+        <h2 class="xisually-hidden">Наши преимущества</h2>
+        <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+        <div class="feature-left">
+          <p>
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+            и проверенных временем технологий.
+          </p>
+          <p>
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+            дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+          </p>
+        </div>
+        <div class="feature-right">
+          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+            связывает долговременное сотрудничество.
+          </p>
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+            растаять в пути и позволяет сохранить превосходный вкус.
+          </p>
+        </div>
+      </section>
+
+      <section class="blog">
+        <h2 class="blog-news">Новое в нашем блоге</h2>
+        <a href="blog.html">
+          10 способов сервировки фруктовых щербетов к столу
+        </a>
+      </section>
+
+      <section class="subscribe">
+        <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
+        <p>
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label class="visually-hidden" for="email-subscribe">Электронная почта</label>
+            <input class="login-icon-user" id="email-subscribe" type="text" name="email"
+              placeholder="Электронная почта">
+          </p>
+        </form>
+        <button class="button" type="submit">Отправить</button>
+      </section>
+
+      <section class="feedback">
+        <h2 class="hidden-visually">Где мы находимся</h2>
+        <img src="img/Map.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <div class="adress">
+          <p>Адрес главного офиса
+            и офлайн-магазина: <br>
+            <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+          </p>
+          <p>Для заказов по телефону: <br>
+            <b>8 812 450-25-25</b> <br>
+            (с 10 до 20 ежедневно)
+          </p>
+          <a href="feedback.html">Форма обратной связи</a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <path fill="#FFF"
+                  d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <g fill="#FFF">
+                  <path
+                    d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z" />
+                  <path
+                    d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z" />
+                  <path
+                    d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <path fill="#FFF"
+                  d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <g fill="#FFF">
+                  <path
+                    d="M16.637 14.495c.402-.019.719-.082.951-.188.326-.145.54-.33.641-.559.101-.229.15-.496.15-.797 0-.232-.058-.465-.174-.697-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165a76.242 76.242 0 0 0-1.652-.014h-.339v2.965h.565c.571 0 1.057-.009 1.459-.028zM18.118 17.084c-.282-.081-.672-.125-1.166-.132a127.97 127.97 0 0 0-1.55-.009h-.79v3.493h.264c1.014 0 1.74-.003 2.18-.009a3.2 3.2 0 0 0 1.212-.245c.377-.157.633-.364.774-.625s.214-.562.214-.9c0-.446-.088-.788-.261-1.03-.17-.241-.464-.423-.877-.543z" />
+                  <path
+                    d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm6.602 20.531a3.73 3.73 0 0 1-1.124 1.327c-.552.415-1.161.71-1.823.886s-1.501.264-2.519.264h-6.121V8.987h5.443c1.13 0 1.957.038 2.48.113a5.126 5.126 0 0 1 1.561.5c.533.27.929.632 1.189 1.087.26.455.392.975.392 1.558 0 .678-.179 1.278-.536 1.795-.358.518-.863.92-1.517 1.208v.075c.917.182 1.642.559 2.179 1.13.537.571.807 1.325.807 2.261 0 .678-.138 1.283-.411 1.817z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-menu">
+          <ul>
+            <li class="provider"><a href="#"><b>Для поставщиков</b></a></li>
+            <li><a href="#">О производстве</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="#">Наши документы</a></li>
+            <li><a href="#">Экологические стандарты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">Ссылка на HTML Academy</span>
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Acadamy">
+        </a>
+        <span>Сделано в </span>
+        <a class="text-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy ©</a>
+        <span>2019</span>
+      </div>
+    </footer>
+
+    <section class="modal">
+      <form class="modal-login" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label class="visually-hidden" for="user-login">Электронная почта</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <a class="restore" href="#">Забыли пароль?</a>
+          <a class="new-regestration" href="#">Новая регистрация</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+    </section>
+
+    <section class="modal">
+      <form class="modal-search" action="https://echo.htmlacademy.ru" method="GET">
+        <label class="visually-hidden" for="searc">Поиск</label>
+        <input class="login-icon-user" id="search" type="text" name="login" placeholder="Что ищем?">
+      </form>
+    </section>
+
+    <section class="modal">
+      <form class="modal-feedback" action="https://echo.htmlacademy.ru" method="POST">
+        <p>Мы обязательно вам ответим!</p>
+        <p class="feedback-item">
+          <label class="visually-hidden" for="name">Представтесь</label>
+          <input type="text" id="name" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p class="feedback-item">
+          <label class="visually-hidden" for="email">Укажите Ваш e-mail</label>
+          <input type="text" id="email" name="email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p class="feedback-item">
+          <label for="about">Текст обращения</label>
+          <input type="textarea" id="about" name="about" rows="10" placeholder="Напишите что-нибудь...">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
+    </section>
+  </div>
+</body>
+
 </html>
