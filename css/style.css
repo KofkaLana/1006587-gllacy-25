@@ -198,6 +198,7 @@ img {
     background-color: #ffffff;
 }
 
+/* Главная страница */
 /* Баннеры */
 
 .promotion {
@@ -286,6 +287,55 @@ img {
     background: #c82652 url("../img/hit.jpg");
     border-radius: 50%;
     /* z-index: 2; */
+}
+
+/* Блог и подписка */
+.blog,
+.subscribe {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.blog {
+    width: 520px;
+    padding: 20px;
+
+    color: #000000;
+    background: #ffffff url("../img/strawberry.jpg") no-repeat;
+    border-radius: 16px;
+}
+
+.blog .blog-news {
+    margin: 0;
+    font: inherit;
+}
+
+.blog a {
+    display: block;
+    width: 380px;
+    margin: 15px 0 60px 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: underline #000000;
+}
+
+.subscribe {
+    width: 510px;
+    padding: 20px;
+
+    color: #5a5a5a;
+    border: 5px solid;
+    background-color: #f8f7f4;
+    border-image-source: url("../img/post-border.jpg");
+    border-image-slice: 10;
+    
+    border-radius: 16px;
+}
+
+.subscribe form {
+    display: flex;
 }
 
 /* подвал */
