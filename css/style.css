@@ -297,7 +297,7 @@ a.restore {
 /* Баннеры */
 
 .promotion {
-    margin: 40px 0;
+    margin: 40px 0 34px;
 }
 
 .promotion ul {
@@ -325,7 +325,7 @@ a.restore {
     display: flex;
     flex-direction: column;
     width: 560px;
-    padding: 20px;
+    padding: 16px 20px;
     border-radius: 16px;
 }
 
@@ -364,7 +364,7 @@ a.restore {
 }
 
 .hits-list {
-    margin: 0;
+    margin: 0 0 14px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -386,9 +386,10 @@ a.restore {
 
 .features {
     margin: 0 27px;
-    padding: 30px 24px 20px;
+    padding: 23px 20px 4px;
     color: #000000;
     background: #ede0c6 url("../img/waffle.jpg");
+    border-radius: 16px;
 }
 
 .feature-list {
@@ -403,14 +404,14 @@ a.restore {
 
 .feature-item {
     position: relative;
-    width: 475px;
-    padding-left: 60px;
-    margin-bottom: 20px;
+    width: 483px;
+    padding-left: 57px;
+    margin-bottom: 22px;
 }
 
 .feature-item::before {
     position: absolute;
-    top: -16px;
+    top: -11px;
     left: 0;
     display: block;
     width: 49px;
@@ -438,7 +439,7 @@ a.restore {
 
 .features .title {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
@@ -461,12 +462,12 @@ a.restore {
     width: 520px;
     padding: 20px;
     color: #000000;
-    background: #ffffff url("../img/strawberry.jpg") no-repeat 20% 40%;
+    background: #ffffff url("../img/strawberry.jpg") no-repeat 17% 39%;
     border-radius: 16px;
 }
 
 .blog .blog-news {
-    margin: 0;
+    margin: 0 0 -8px;
     font: inherit;
 }
 
@@ -483,7 +484,7 @@ a.restore {
 
 .subscribe {
     width: 560px;
-    padding: 35px 25px;
+    padding: 32px 26px 35px;
     box-sizing: border-box;
     color: #5a5a5a;
     background-color: #f8f7f4;
@@ -496,7 +497,7 @@ a.restore {
 
 .subscribe form {
     display: flex;
-    margin-top: 35px;
+    margin-top: 32px;
 }
 
 .subscribe p {
@@ -526,7 +527,7 @@ a.restore {
     position: absolute;
     width: 250px;
     padding: 25px 25px;
-    top: 55px;
+    top: 63px;
     right: 27px;
 
     color: #000000;
@@ -540,7 +541,7 @@ a.restore {
 
 .contacts-block-label {
     width: 172px;
-    margin: 0 0 10px;
+    margin: 0 0 3px;
     font-size: 14px;
     line-height: 20px;
 }
@@ -565,7 +566,7 @@ a.restore {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px 0;
+    padding: 23px 0;
     font-size: 13px;
     line-height: 18px;
 }
@@ -762,11 +763,12 @@ a.restore {
     flex-direction: column;
     position: relative;
     width: 295px;
-    margin-bottom: 25px;
+    margin-bottom: -53px;
+    padding-bottom: 35px;
 }
 
 .catalog-item h3 {
-    margin: 15px 0 10px;
+    margin: 10px 0 45px;
     padding: 0 25px;
     font-size: 16px;
     line-height: 22px;
@@ -787,7 +789,7 @@ a.restore {
     margin: 0;
     position: absolute;
     left: 13px;
-    bottom: 75px;
+    bottom: 143px;
 }
 
 .catalog-item a {
@@ -799,32 +801,33 @@ a.restore {
 }
 
 .price {
-    font-size: 45px;
+    font-size: 46px;
     line-height: 45px;
     font-weight: 700;
 }
 
 .weight {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 45px;
     font-weight: 700;
 }
 
 .catalog-btn {
     opacity: 0;
-    padding: 12px 23px;
+    padding: 8px 23px 15px;
     text-decoration: none;
     position: absolute;
-    bottom: -48px;
+    bottom: 18px;
     left: 45px;
     
     z-index: 5;
 }
 
 .catalog-item:hover {
-
     background-color: rgb(255, 255, 255, 0.2);
     border-radius: 5px;
+
+    z-index: 4;
 }
 
 .catalog-item:hover .catalog-btn {
