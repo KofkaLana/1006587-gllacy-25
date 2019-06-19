@@ -7,16 +7,12 @@ body {
     line-height: 22px;
     font-weight: 400;
     color: #ffffff;
-    background-color: rgba(155, 175, 164, 0.5);
+    background-color: #849d8f;
 }
 
-.site-wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    background: #9aaea3 url(../img/background-1.png) no-repeat;
-}
-
-.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active), 
+input[type="checkbox"].visually-hidden, 
+input[type="radio"].visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -31,7 +27,7 @@ body {
 }
 
 .container {
-    width: 1146px;
+    max-width: 1146px;
     margin: 0 auto;
     padding: 1px 27px;
 }
@@ -73,7 +69,7 @@ img {
     line-height: 18px;
 }
 
-.site-navigation a {
+.site-navigation-item a {
     display: block;
     padding: 10px 14px;
     text-align: center;
@@ -85,34 +81,31 @@ img {
 .site-navigation-current>a {
     background-color: #d07058;
     border-radius: 20px;
+    text-decoration: none;
 }
 
 .site-navigation>li {
     position: relative;
 }
 
-.site-navigation .sub-menu {
+.sub-menu {
     display: none;
     position: absolute;
-    top: 43px;
     left: 1px;
     width: 145px;
+    margin-top: 5px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
+
     margin: 0;
     padding: 0;
     list-style: none;
+
     color: #000000;
-    background-color: #ffffff;
+    background-color: #f8f7f4;
     border-radius: 10px;
     z-index: 5;
-}
-
-.site-navigation, .user-navigation {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 .user-navigation {
@@ -128,6 +121,7 @@ img {
 .sub-menu a {
     text-align: left;
     color: #000000;
+    text-decoration: none;
     border-radius: 0;
 }
 
@@ -153,7 +147,6 @@ img {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    text-align: right;
 }
 
 .user-navigation li {
@@ -161,7 +154,7 @@ img {
     margin-left: 10px;
 }
 
-.user-navigation a {
+.user-navigation-item a {
     display: block;
     padding: 10px 14px;
     text-align: center;
@@ -170,7 +163,7 @@ img {
     border-radius: 20px;
 }
 
-.user-navigation .tooltip {
+.tooltip {
     display: none;
     position: absolute;
     top: 43px;
@@ -194,6 +187,17 @@ img {
     line-height: 24px;
     border: 1px solid #d4d4d3;
     border-radius: 5px;
+}
+
+.tooltip input:hover {
+    border: 2px solid rgba(154, 154, 154, 0.52);
+    padding: 9px;
+}
+
+.tooltip input:focus {
+    outline-color: transparent;
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    padding: 9px;
 }
 
 .tooltip .search {
@@ -225,8 +229,19 @@ a.restore {
     font-size: 13px;
     font-weight: 400;
     text-align: left;
-    color: #000000;
+    color: #323232;
     text-decoration: underline;
+}
+
+.login-help a:hover,
+.login-help a:focus {
+    color: #e84d37;
+    text-decoration-color: #f9cdc4;
+}
+
+.login-help a:active {
+    color: #e84d37;
+    text-decoration-color:  #f9cdc4;
 }
 
 .button-login {
@@ -254,7 +269,7 @@ a.restore {
 
 .site-navigation a[href]:hover, .site-navigation a[href]:focus {
     color: #000000;
-    background-color: #ffffff;
+    background-color: #f7f6f3;
 }
 
 .site-navigation a[href]:active {
@@ -267,7 +282,7 @@ a.restore {
 
 .user-navigation a:hover, .user-navigation a:focus {
     color: #000000;
-    background-color: #ffffff;
+    background-color: #f7f6f3;
 }
 
 .user-navigation li:hover .tooltip{
@@ -279,19 +294,35 @@ a.restore {
 .basket-full {
     /* display: none; */
     width: 540px;
+
+    color: #323232;
 }
 
-.user-navigation li:hover .basket-full{
-    /* display: table; */
+.basket {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    border-collapse: collapse;
 }
+
+.remove-order {
+
+}
+
+.order-img {
+    display: block;
+    width: 33px;
+    height: 33px;
+}
+
 
 
 /* Главная страница */
 
-/* Листалка */
+/* slider */
 
 .offers {
-    padding-top: 500px;
+    /* padding-top: 500px; */
 }
 
 /* Баннеры */
@@ -308,17 +339,32 @@ a.restore {
 }
 
 .button {
+    display: inline-block;
+    vertical-align: middle;
+    
     font: inherit;
-    padding: 12px 23px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     text-align: center;
-    vertical-align: middle;
     color: #ffffff;
-    background-color: #ee6541;
+    text-decoration: none;
+    
+    background: #ee6541 linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     border: none;
     border-radius: 22px;
+}
+
+.button:hover,
+.button:focus {
+    background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.button:active {
+    background-image: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);    
 }
 
 .promo {
@@ -358,7 +404,8 @@ a.restore {
 
 /* хиты */
 
-.hits {
+.hits-wrapper {
+    max-width: 1180px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -385,9 +432,13 @@ a.restore {
 /* Преимущества */
 
 .features {
-    margin: 0 27px;
-    padding: 23px 20px 4px;
     color: #000000;
+}
+
+.features .container {
+    box-sizing: border-box;
+    padding: 23px 20px 4px;
+
     background: #ede0c6 url("../img/waffle.jpg");
     border-radius: 16px;
 }
@@ -417,22 +468,21 @@ a.restore {
     width: 49px;
     height: 49px;
     content: '';
-    background-color: greenyellow;
 }
 
-.feature-item:first-child::before {
+.icon-ice-cream::before {
     background: url("../img/ice-cream.svg") no-repeat;
 }
 
-.feature-item:nth-child(3)::before {
+.icon-eco::before {
     background: url("../img/eco.svg") no-repeat;
 }
 
-.feature-item:nth-child(2)::before {
+.icon-cow::before {
     background: url("../img/cow.svg") no-repeat;
 }
 
-.feature-item:last-child::before {
+.icon-thermometr::before {
     background: url("../img/thermometer.svg") no-repeat;
 }
 
@@ -448,9 +498,12 @@ a.restore {
 /* Блог и подписка */
 
 .wrapper {
+    margin: 40px 0;
+}
+
+.wrapper .container {
     display: flex;
     justify-content: space-between;
-    margin: 40px 0;
 }
 
 .blog, .subscribe {
@@ -482,13 +535,20 @@ a.restore {
     text-decoration: underline #000000;
 }
 
+.blog a:hover,
+.blog a:focus,
+.blog a:active {
+    color: #ffbc9e;
+    text-decoration-color: rgba(255, 188, 158, 0.3);
+}
+
 .subscribe {
     width: 560px;
     padding: 32px 26px 35px;
     box-sizing: border-box;
     color: #5a5a5a;
     background-color: #f8f7f4;
-    background: url(../img/substrate.jpg), url(../img/post-border.jpg);
+    background-image: linear-gradient(90deg,  #f8f7f4,  #f8f7f4), url(../img/bg-post.svg);
     background-repeat: no-repeat;
     background-size: 98% 95%, cover;
     background-position: center;
@@ -510,6 +570,20 @@ a.restore {
     font: inherit;
     font-size: 16px;
     line-height: 24px;
+
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    border-radius: 5px;
+}
+
+.subscribe input:hover {
+    padding: 11px 15px;
+    border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.subscribe input:focus {
+    padding: 11px 15px;
+    outline-color: transparent;
+    border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
 .subscribe .button {
@@ -521,6 +595,8 @@ a.restore {
 
 .feedback {
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .address {
@@ -563,12 +639,14 @@ a.restore {
 /* подвал */
 
 .main-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 23px 0;
     font-size: 13px;
     line-height: 18px;
+}
+
+.main-footer .container {
+    display: flex;
+    align-items: center;
 }
 
 .footer-social {
@@ -594,6 +672,17 @@ a.restore {
     opacity: 0.8;
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
+}
+
+.social-button:hover svg,
+.social-button:focus svg {
+    opacity: 1;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-button:active svg {
+    opacity: 0.7;
+    border: 3px solid rgba(255, 255, 255, 0.9);
 }
 
 .footer-middle {
@@ -643,10 +732,6 @@ a.restore {
     margin-left: auto;
 }
 
-.footer-copyright a {
-    color: #ffffff;
-}
-
 /* Модалка */
 
 .modal {
@@ -655,6 +740,7 @@ a.restore {
     padding: 20px 36px 17px 20px;
     background-color: #f8f7f4;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 
 .modal-close {
@@ -674,25 +760,25 @@ a.restore {
 
 .modal-close::before,
 .modal-close::after {
-  content: "";
+    content: "";
 
-  position: absolute;
-  top: 10px;
-  left: 2px;
+    position: absolute;
+    top: 10px;
+    left: 2px;
 
-  width: 22px;
-  height: 3px;
+    width: 22px;
+    height: 3px;
 
-  background-color: #000000;
+    background-color: #000000;
 }
 
 .modal-close::before {
     transform: rotate(45deg);
-  }
+}
   
-  .modal-close::after {
+.modal-close::after {
     transform: rotate(-45deg);
-  }
+}
 
 .modal-feedback {
     display: flex;
@@ -717,24 +803,98 @@ a.restore {
     padding: 12px 15px;
     font-size: 16px;
     line-height: 24px;
+    
+    border: 1px solid #999999;
+    border-radius: 5px;
 }
 
 .feedback-item textarea {
     width: 100%;
     padding: 12px 15px;
     box-sizing: border-box;
+    
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+.feedback-item input:hover,
+.feedback-item textarea:hover {
+    border: 2px solid rgba(154, 154, 154, 0.52);
+    padding: 11px 14px;
+}
+
+.feedback-item input:focus,
+.feedback-item textarea:focus {
+    outline-color: transparent;
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    padding: 11px 14px;
+}
+
+.feedback-item input:active,
+.feedback-item textarea:active {
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    padding: 12px 15px;
 }
 
 .modal-feedback .button {
     align-self: flex-end;
 }
 
-/* Внутренняя страница */
+/* catalog page */
 
 .inner-wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    background-color: rgba(155, 175, 164, 0.5);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+
+.page-title {
+    margin: 5px 27px 30px;
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.inner-page .container {
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 15px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.breadcrumbs li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.breadcrumbs li:last-child {
+    margin-right: 0;
+}
+
+.breadcrumbs-current::after {
+    display: none;
+}
+
+.breadcrumbs a[href] {
+    color: #ffffff;
+    text-decoration: underline rgba(255, 255, 255, 0.4);
+}
+
+.breadcrumbs li::after {
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+    
+    content: "»";
+    right: -15px;
 }
 
 /* фильтры */
@@ -745,7 +905,8 @@ a.restore {
 
 /* Каталог товаров */
 
-.catalog {
+.catalog-wrapper {
+    max-width: 1180px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -763,11 +924,11 @@ a.restore {
     flex-direction: column;
     position: relative;
     width: 295px;
-    margin-bottom: -53px;
+    margin-bottom: -44px;
     padding-bottom: 35px;
 }
 
-.catalog-item h3 {
+.catalog-item-header {
     margin: 10px 0 45px;
     padding: 0 25px;
     font-size: 16px;
@@ -792,12 +953,19 @@ a.restore {
     bottom: 143px;
 }
 
-.catalog-item a {
+.catalog-item-header a {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
     text-decoration: underline rgba(255, 255, 255, 0.4);
     color: #ffffff;
+}
+
+.catalog-item-header a:hover,
+.catalog-item-header a:focus,
+.catalog-item-header a:active {
+    color: #ffbc9e;
+    text-decoration-color:  rgba(255, 188, 158, 0.3);
 }
 
 .price {
@@ -834,6 +1002,47 @@ a.restore {
     opacity: 1;
 }
 
-.inner-footer {
-    border-top: 2px solid rgb(255, 255, 255, 0.3);
+.pagination-list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 48px 0 29px;
+    padding: 0;
+    line-height: 24px;
+
+    list-style: none;
+}
+
+.pagination-item {
+    width: 30px;
+}
+
+.pagination-item a {
+    display: block;
+    text-align: center;
+    width: 26px;
+    height: 26px;
+    
+    color: #ffffff;
+}
+
+.pagination-item-disabled a {
+    color: rgb(255, 255, 255, 0.2);
+}
+
+.pagination-item-current a {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 50%
+}
+
+.pagination-item a[href]:hover,
+.pagination-item a[href]:focus {
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.pagination-item a[href]:active {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 50%;
 }
