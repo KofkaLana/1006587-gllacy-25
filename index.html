@@ -46,10 +46,8 @@
               <a class="tooltip-trigger" href="#">Вход</a>
               <div class="tooltip">
                 <form class="login-link" action="https://echo.htmlacademy.ru" method="POST">
-                  <input class="input-fields" id="user-login" type="email" name="login"
-                    placeholder="Электронная почта">
-                  <input class="input-fields" id="user-password" type="password" name="password"
-                    placeholder="Пароль">
+                  <input class="input-fields" id="user-login" type="email" name="login" placeholder="Электронная почта">
+                  <input class="input-fields" id="user-password" type="password" name="password" placeholder="Пароль">
                   <p class="login-help">
                     <a class="restore" href="#">Забыли пароль?</a>
                     <a class="restore" href="#">Новая регистрация</a>
@@ -62,7 +60,7 @@
           </ul>
           <p class="contacts">
             <span>С 10 до 20, ежедневно</span>
-            <a class="phoun-number" href="tel:8 812 450-25-25">8 812 450-25-25</a>
+            <a class="phone-number" href="tel:88124502525">8 812 450-25-25</a>
           </p>
         </div>
       </nav>
@@ -177,17 +175,19 @@
         </section>
 
         <section class="subscribe">
-          <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
-          <p>
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-          </p>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <label class="visually-hidden" for="email-subscribe">Электронная почта</label>
-            <input class="input-fields" id="email-subscribe" type="email" name="email"
-              placeholder="Электронная почта">
-            <button class="button" type="submit">Отправить</button>
-          </form>
+          <div class="subscribe-wrapper">
+            <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
+            <p>
+              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+            </p>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <label class="visually-hidden" for="email-subscribe">Электронная почта</label>
+              <input class="input-fields" id="email-subscribe" type="email" name="email"
+                placeholder="Электронная почта">
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
       </div>
     </div>

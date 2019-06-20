@@ -29,7 +29,7 @@ input[type="radio"].visually-hidden {
 .container {
     max-width: 1146px;
     margin: 0 auto;
-    padding: 1px 27px;
+    padding: 0 27px;
 }
 
 a {
@@ -48,7 +48,7 @@ img {
     font-weight: 700;
     display: flex;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 9px;
 }
 
 .main-header-logo {
@@ -58,7 +58,7 @@ img {
 
 .site-navigation, .user-navigation {
     margin: 0;
-    padding: 0;
+    padding: 9px 0 0;
     list-style: none;
 }
 
@@ -92,6 +92,7 @@ img {
     display: none;
     position: absolute;
     left: 1px;
+    top: 43px;
     width: 145px;
     margin-top: 5px;
     font-size: 14px;
@@ -139,7 +140,7 @@ img {
     font-weight: 500;
 }
 
-.user-navigation li {
+.user-navigation-item {
     position: relative;
     margin-left: 10px;
 }
@@ -163,6 +164,19 @@ img {
     background-color: #f8f7f4;
     border-radius: 5px;
     z-index: 5;
+}
+
+.tooltip::after {
+    position: absolute;
+    width: 160px;
+    height: 10px;
+
+    top: -9px;
+    right: 0;
+
+    content: "";
+    background-color: transparent;
+
 }
 
 .tooltip form {
@@ -242,8 +256,8 @@ a.restore {
     padding: 12px 23px;
 }
 
-.user-navigation-wrapper .phoun-number,
-.breadcrumbs-container .phoun-number {
+.user-navigation-wrapper .phone-number,
+.breadcrumbs-container .phone-number {
     font-size: 22px;
     line-height: 24px;
     color: #ffffff;
@@ -439,6 +453,7 @@ a.restore {
 /* Преимущества */
 
 .features {
+    margin-top: -9px;
     color: #000000;
 }
 
@@ -551,14 +566,20 @@ a.restore {
 
 .subscribe {
     width: 560px;
-    padding: 32px 26px 35px;
+    padding: 5px;
     box-sizing: border-box;
     color: #5a5a5a;
-    background-color: #f8f7f4;
-    background-image: linear-gradient(90deg,  #f8f7f4,  #f8f7f4), url(../img/bg-post.svg);
+    
+    background-image: url(../img/bg-post.svg);
     background-repeat: no-repeat;
-    background-size: 98% 95%, cover;
+    background-size: cover;
     background-position: center;
+    border-radius: 16px;
+}
+
+.subscribe-wrapper {
+    padding: 32px 26px 35px;
+    background-color: #f8f7f4;
     border-radius: 16px;
 }
 
@@ -850,11 +871,12 @@ a.restore {
 /* catalog page */
 
 .inner-wrapper {
+    padding-top: 1px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 
 .page-title {
-    margin: 5px 0 30px;
+    margin: 5px 0 18px;
     font-size: 35px;
     line-height: 41px;
 }
