@@ -12,7 +12,8 @@ body {
 
 .visually-hidden:not(:focus):not(:active), 
 input[type="checkbox"].visually-hidden, 
-input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden,
+button.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -44,11 +45,15 @@ img {
 
 /* Шапка */
 
+.main-header {
+    padding-top: 1px;
+}
+
 .main-navigation {
     font-weight: 700;
     display: flex;
     width: 100%;
-    margin-top: 9px;
+    margin-top: 8px;
 }
 
 .main-header-logo {
@@ -58,7 +63,7 @@ img {
 
 .site-navigation, .user-navigation {
     margin: 0;
-    padding: 9px 0 0;
+    padding: 10px 0 0;
     list-style: none;
 }
 
@@ -79,6 +84,8 @@ img {
 }
 
 .site-navigation-current>a {
+    margin-top: 3px;
+    padding: 6px 14px 10px;
     background-color: #d07058;
     border-radius: 20px;
     text-decoration: none;
@@ -91,35 +98,38 @@ img {
 .sub-menu {
     display: none;
     position: absolute;
-    left: 1px;
-    top: 43px;
-    width: 145px;
-    margin-top: 5px;
+    left: -6px;
+
+    width: 142px;
+    margin: 5px 0 0;
+    padding: 0 0 5px;
+    
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
-
-    margin: 0;
-    padding: 0;
+    
     list-style: none;
 
     color: #000000;
     background-color: #f8f7f4;
-    border-radius: 10px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
     z-index: 5;
-}
+} 
 
 .user-navigation {
     display: flex;
-    margin-bottom: 20px;
+    align-items: flex-end;
+    margin: 4px 0 17px;
 }
 
 .sub-menu li:first-child {
     font-weight: 700;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 5px;
 }
 
 .sub-menu a {
+    padding: 8px 19px 8px;
     text-align: left;
     color: #000000;
     text-decoration: none;
@@ -129,6 +139,17 @@ img {
 .sub-menu-current a {
     color: #ffffff;
     background-color: #d07058;
+}
+
+.sub-menu::after {
+    position: absolute;
+    width: 131px;
+    height: 1px;
+
+    content: "";
+    top: 37px;
+    left: 5px;
+    background: #d1d0ce;
 }
 
 .user-navigation-wrapper {
@@ -142,12 +163,12 @@ img {
 
 .user-navigation-item {
     position: relative;
-    margin-left: 10px;
+    margin-left: 9px;
 }
 
 .user-navigation-item a {
     display: block;
-    padding: 10px 14px;
+    padding: 6px 17px 4px;
     text-align: center;
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.2);
@@ -157,12 +178,13 @@ img {
 .tooltip {
     display: none;
     position: absolute;
-    top: 43px;
-    right: 0;
-    box-sizing: border-box;
+    top: 36px;
+    right: 1px;
+
     color: #c2c2c2;
     background-color: #f8f7f4;
     border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     z-index: 5;
 }
 
@@ -176,7 +198,6 @@ img {
 
     content: "";
     background-color: transparent;
-
 }
 
 .tooltip form {
@@ -185,7 +206,7 @@ img {
 
 .tooltip input {
     width: 100%;
-    padding: 10px;
+    padding: 9px 12px;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 24px;
@@ -207,11 +228,12 @@ img {
 .tooltip .search {
     width: 340px;
     padding: 20px 15px;
+    box-sizing: border-box;
 }
 
 .tooltip .login-link {
-    width: 280px;
-    padding: 20px 19px;
+    width: 278px;
+    padding: 18px 18px;
     box-sizing: border-box;
 }
 
@@ -220,7 +242,7 @@ img {
 }
 
 .login-link p {
-    margin: 0 0 20px;
+    margin: -3px 0 20px;
 }
 
 .login-help {
@@ -258,8 +280,10 @@ a.restore {
 
 .user-navigation-wrapper .phone-number,
 .breadcrumbs-container .phone-number {
+    margin-top: 3px;
     font-size: 22px;
     line-height: 24px;
+    font-weight: 700;
     color: #ffffff;
 }
 
@@ -281,11 +305,13 @@ a.restore {
     box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.9);
 }
 
-.site-navigation-item:hover .sub-menu {
+.site-navigation-item:hover .sub-menu,
+.site-navigation-item:focus .sub-menu,
+.site-navigation-item:focus-within .sub-menu {
     display: block;
 }
 
-.user-navigation a:hover, .user-navigation a:focus {
+.user-navigation a[href]:hover, .user-navigation a[href]:focus {
     color: #000000;
     background-color: #f7f6f3;
 }
@@ -310,7 +336,37 @@ a.restore {
     display: block;
 }
 
+svg.user-navigation-icon path {
+    fill: #ffffff;
+}
+
+a.search-link {
+    padding: 6px 8px;
+}
+
+.tooltip-trigger span,
+.order-empty span {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3px;
+}
+
+.tooltip-trigger[href]:hover path,
+.tooltip-trigger[href]:focus path {
+    fill: #000000;
+}
+
 /* корзина на врутренней странице */
+
+a.order {
+    color: #000;
+    background-color: #fff;
+}
+
+a.order:hover path,
+a.order:focus path {
+    fill: inherit;
+}
 
 .basket-full {
     /* display: none; */
@@ -326,10 +382,6 @@ a.restore {
     border-collapse: collapse;
 }
 
-.remove-order {
-
-}
-
 .order-img {
     display: block;
     width: 33px;
@@ -339,12 +391,6 @@ a.restore {
 
 
 /* Главная страница */
-
-/* slider */
-
-.offers {
-    /* padding-top: 500px; */
-}
 
 /* Баннеры */
 
@@ -870,9 +916,12 @@ a.restore {
 
 /* catalog page */
 
-.inner-wrapper {
-    padding-top: 1px;
+.inner-page {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+
+.inner-page .contacts {
+    margin-top: -3px;
 }
 
 .page-title {
