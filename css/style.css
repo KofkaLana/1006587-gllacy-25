@@ -231,17 +231,17 @@ img {
     box-sizing: border-box;
 }
 
-.tooltip .login-link {
+.tooltip .login {
     width: 278px;
     padding: 18px 18px;
     box-sizing: border-box;
 }
 
-.login-link input {
+.login input {
     margin-bottom: 20px;
 }
 
-.login-link p {
+.login p {
     margin: -3px 0 20px;
 }
 
@@ -351,8 +351,10 @@ a.search-link {
     margin-left: 3px;
 }
 
-.tooltip-trigger[href]:hover path,
-.tooltip-trigger[href]:focus path {
+.search-link:hover path,
+.login-link:hover path,
+.search-link:focus path,
+.login-link:focus path {
     fill: #000000;
 }
 
@@ -361,11 +363,6 @@ a.search-link {
 a.order {
     color: #000;
     background-color: #fff;
-}
-
-a.order:hover path,
-a.order:focus path {
-    fill: inherit;
 }
 
 .basket-full {
