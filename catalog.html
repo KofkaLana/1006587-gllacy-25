@@ -11,7 +11,8 @@
 
 <body>
 
-    <header class="main-header inner-page">
+  <div class="inner-page">
+    <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
           <a class="main-header-logo" href="index.html">
@@ -28,8 +29,8 @@
                 <li><a href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
-            <li class="site-navigation-item"><a href="#">О Компании</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-item-link" href="#">Доставка и оплата</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-item-link" href="#">О Компании</a></li>
           </ul>
           <div class="user-navigation-wrapper">
             <ul class="user-navigation">
@@ -66,8 +67,12 @@
                       placeholder="Электронная почта">
                     <input class="input-fields" id="user-password" type="password" name="password" placeholder="Пароль">
                     <p class="login-help">
-                      <a class="restore" href="#">Забыли пароль?</a>
-                      <a class="restore" href="#">Новая регистрация</a>
+                      <a class="restore" href="#">
+                        <span>Забыли пароль?</span>
+                      </a>
+                      <a class="restore" href="#">
+                        <span>Новая регистрация</span>
+                      </a>
                     </p>
                     <button class="button button-login" type="submit">Войти</button>
                   </form>
@@ -84,36 +89,42 @@
                   </svg>
                   <span>2 товара</span>
                 </a>
-                <div class="tooltip basket-full">
-                  <table class="basket">
-                    <tr>
-                      <td>
-                        <button class="modal-close remove-order" type="button">Удалить</button>
-                        <a class="order-img" href="#"><img src="img/basket-ice-1.jpg" width="33" height="33"
-                            alt="Пломбир с апельсиновым джемом"></a>
-                      </td>
-                      <td>Пломбир с апельсиновым джемом</td>
-                      <td>1,5 кг х <span>200 руб</span></td>
-                      <td>300 руб</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <button class="modal-close remove-order" type="button">Удалить</button>
-                        <a class="order-img" href="#"><img src="img/basket-ice-2.png" width="33" height="33"
-                            alt="Клубничный пломбир с присыпкой из белого шоколада">
-                        </a>
-                      </td>
-                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                      <td>1,5 кг х <span>300 руб</span></td>
-                      <td>450 руб</td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td colspan="3">Итого: 750 руб.</td>
-                    </tr>
-                  </table>
-                  <a class="button basket-btn" href="#">Оформить заказ</a>
+                <div class="tooltip">
+                  <div class="basket-full">
+                    <ul class="basket-list">
+                      <li class="basket-item">
+                        <div class="order-column">
+                          <button class="remove-order" type="button">
+                            <img src="img/cross-small.svg" alt="Удалить продукт">
+                          </button>
+                          <a class="order-img" href="#"><img src="img/basket-ice-1.jpg" width="33" height="33"
+                              alt="Пломбир с апельсиновым джемом"></a>
+                        </div>
+                        <p class="order-name">Пломбир с апельсиновым джемом</p>
+                        <p>
+                          1,5 кг х <span class="price-kg">200 руб</span>
+                        </p>
+                        <span class="order-price">300 руб</span>
+                      </li>
+                      <li class="basket-item">
+                        <div class="order-column">
+                          <button class="remove-order" type="button">
+                            <img src="img/cross-small.svg" alt="Удалить продукт">
+                          </button>
+                          <a class="order-img" href="#"><img src="img/basket-ice-2.png" width="33" height="33"
+                              alt="Клубничный пломбир с присыпкой из белого шоколада">
+                          </a>
+                        </div>
+                        <p class="order-name">Клубничный пломбир с присыпкой из белого шоколада</p>
+                        <p>1,5 кг х <span class="price-kg">300 руб</span></p>
+                        <span class="order-price">450 руб</span>
+                      </li>
+                    </ul>
+                    <div class="order-column-result">
+                      <span class="total-price">Итого: 750 руб.</span>
+                      <a class="button basket-btn" href="#">Оформить заказ</a>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -122,7 +133,7 @@
       </div>
     </header>
 
-    <main class="inner-page">
+    <main>
       <div class="breadcrumbs-container">
         <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
@@ -349,7 +360,7 @@
       </section>
     </main>
 
-    <footer class="main-footer inner-footer inner-page">
+    <footer class="main-footer inner-footer">
       <div class="container">
         <div class="footer-social">
           <ul>
@@ -419,7 +430,7 @@
         </div>
       </div>
     </footer>
-
+  </div>
 </body>
 
 </html>
