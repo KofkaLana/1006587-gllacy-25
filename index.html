@@ -64,15 +64,17 @@
                 <form class="login" action="https://echo.htmlacademy.ru" method="POST">
                   <input class="input-fields" id="user-login" type="email" name="login" placeholder="Электронная почта">
                   <input class="input-fields" id="user-password" type="password" name="password" placeholder="Пароль">
-                  <p class="login-help">
-                    <a class="restore" href="#">
-                      <span>Забыли пароль?</span>
-                    </a>
-                    <a class="restore" href="#">
-                      <span>Новая регистрация</span>
-                    </a>
-                  </p>
-                  <button class="button button-login" type="submit">Войти</button>
+                  <div class="restore-wrapper">
+                    <p class="login-help">
+                      <a class="restore" href="#">
+                        <span>Забыли пароль?</span>
+                      </a>
+                      <a class="restore" href="#">
+                        <span>Новая регистрация</span>
+                      </a>
+                    </p>
+                    <button class="button button-login" type="submit">Войти</button>
+                  </div>
                 </form>
               </div>
             </li>
@@ -103,8 +105,31 @@
 
   <main>
     <h1 class="visually-hidden">Магазин мороженого</h1>
-    <section class="offers">
-      <!-- Тут будет листалка -->
+    <section class="slider">
+      <div class="container">
+        <ul class="slider-list">
+          <li class="slider-item slide" id="slide-1">
+            <img src="img/Variant-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+            <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide-2">
+            <img src="img/Variant-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
+            <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide-3">
+            <img src="img/Variant-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
+            <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+        </ul>
+        <ul class="slider-controls">
+          <li><button class="controls-btn">Первый слайд</button></li>
+          <li><button class="controls-btn">Второй слайд</button></li>
+          <li><button class="controls-btn">Третий слайд</button></li>
+        </ul>
+      </div>
     </section>
 
     <section class="promotion">
