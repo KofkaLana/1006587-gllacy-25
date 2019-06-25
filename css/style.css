@@ -43,6 +43,33 @@ img {
     height: auto;
 }
 
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    font: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    background: #ee6541 linear-gradient(to top, #e74a35 0%, #f26843 100%);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+    border: none;
+    border-radius: 30px;
+}
+
+.button:hover, 
+.button:focus {
+    background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.button:active {
+    background-image: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.64);
+}
+
 /* Шапка */
 
 .main-header {
@@ -506,15 +533,20 @@ a.basket-btn {
     list-style: none;
 }
 
-#slide-2,
-#slide-3 {
+.slide {
     display: none;
 }
 
-.slider-item img {
+.slide-show {
+    display: block;
+}
+
+.slider-list img {
     position: absolute;
     top: -116px;
-    left: 77px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     
     z-index: -1;
 }
@@ -527,7 +559,7 @@ a.basket-btn {
     line-height: 60px;
 }
 
-a.slide-button {
+.slide-button {
     padding: 7px 40px 13px;
     font-size: 32px;
     line-height: 44px;
@@ -556,16 +588,21 @@ a.slide-button {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 50%;
-}
 
-.controls-btn:hover,
-.controls-btn:focus {
-    background-color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
 }
 
-.controls-btn:active {
-    background-color: white;
+.active-btn {
+    background-color: #ffffff;
+}
+
+.controls-btn:not(.active-btn):hover,
+.controls-btn:not(.active-btn):focus {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.controls-btn:not(.active-btn):active {
+    background-color: #ffffff;
 }
 
 /* Баннеры */
@@ -579,33 +616,6 @@ a.slide-button {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.button {
-    display: inline-block;
-    vertical-align: middle;
-    font: inherit;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-    background: #ee6541 linear-gradient(to top, #e74a35 0%, #f26843 100%);
-    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-    border: none;
-    border-radius: 30px;
-}
-
-.button:hover, 
-.button:focus {
-    background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-}
-
-.button:active {
-    background-image: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.64);
 }
 
 .promo {
@@ -797,14 +807,14 @@ a.slide-button {
 }
 
 .subscribe-wrapper {
-    padding: 32px 26px 35px;
+    padding: 27px 22px 35px 21px;
     background-color: #f8f7f4;
     border-radius: 16px;
 }
 
 .subscribe form {
     display: flex;
-    margin-top: 32px;
+    margin-top: 38px;
 }
 
 .subscribe p {
@@ -813,7 +823,7 @@ a.slide-button {
 
 .subscribe input {
     width: 100%;
-    padding: 12px 16px;
+    padding: 6px 13px;
     font: inherit;
     font-size: 16px;
     line-height: 24px;
@@ -822,19 +832,19 @@ a.slide-button {
 }
 
 .subscribe input:hover {
-    padding: 11px 15px;
+    padding: 5px 12px;
     border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
 .subscribe input:focus {
-    padding: 11px 15px;
+    padding: 5px 12px;
     outline: none;
     border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
 .subscribe .button {
-    padding: 12px 23px;
-    margin-left: 10px;
+    padding: 8px 18px 11px;
+    margin-left: 13px;
 }
 
 /* Карта и контакты */
@@ -899,7 +909,7 @@ a.slide-button {
 }
 
 .footer-social ul {
-    margin: 0;
+    margin: 3px 4px -7px 1px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -932,20 +942,30 @@ a.slide-button {
 
 .footer-middle {
     margin: 0 auto;
-    width: 340px;
+    width: 560px;
 }
 
 .footer-menu {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 7px 0 0 107px;
     padding: 0;
     list-style: none;
 }
 
-.footer-menu li {
+.footer-menu a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2px;
+}
+
+.footer-menu li:nth-child(2n-1) {
     position: relative;
-    width: 170px;
+    width: 143px;
+}
+
+.footer-menu li:nth-child(2n) {
+    width: 185px;
 }
 
 .footer-menu a, 
@@ -969,6 +989,7 @@ a.slide-button {
 
 .footer-menu li.provider::before {
     position: absolute;
+    top: 4px;
     left: -22px;
     content: "";
     width: 15px;
@@ -979,6 +1000,12 @@ a.slide-button {
 .footer-copyright {
     font-size: 12px;
     margin-left: auto;
+}
+
+a.academy-logo {
+    display: block;
+    margin: -5px 0 4px 1px;
+    border-bottom: none;
 }
 
 /* Модалка */
