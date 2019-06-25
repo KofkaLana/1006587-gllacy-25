@@ -295,7 +295,7 @@ img {
     margin: 0;
 }
 
-a.restore {
+.restore {
     padding: 2px 1px;
     font-size: 13px;
     font-weight: 400;
@@ -307,9 +307,9 @@ a.restore {
     border-bottom: 1px solid #000000;
 }
 
-.login-help a:hover span, 
-.login-help a:focus span, 
-.login-help a:active span {
+.restore:hover span, 
+.restore:focus span, 
+.restore:active span {
     color: #e84d37;
     border-bottom-color: #f9cdc4;
 }
@@ -1013,10 +1013,10 @@ a.academy-logo {
 .modal {
     position: relative;
     width: 475px;
-    padding: 20px 36px 17px 20px;
+    padding: 15px 24px 27px 21px;
     background-color: #f8f7f4;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .modal-close {
@@ -1035,10 +1035,10 @@ a.academy-logo {
 .modal-close::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 2px;
+    top: 6px;
+    left: 17px;
     width: 22px;
-    height: 3px;
+    height: 2px;
     background-color: #000000;
 }
 
@@ -1060,17 +1060,17 @@ a.academy-logo {
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     color: #000000;
 }
 
 .feedback-item {
-    margin: 0 0 20px;
+    margin: 0 0 18px;
 }
 
 .feedback-item input {
     width: 55%;
-    padding: 12px 15px;
+    padding: 10px 15px 10px 13px;
     font-size: 16px;
     line-height: 24px;
     border: 1px solid #999999;
@@ -1079,7 +1079,7 @@ a.academy-logo {
 
 .feedback-item textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 10px 15px 10px 13px;
     box-sizing: border-box;
     border: 1px solid #999999;
     border-radius: 5px;
@@ -1088,24 +1088,26 @@ a.academy-logo {
 .feedback-item input:hover, 
 .feedback-item textarea:hover {
     border: 2px solid rgba(154, 154, 154, 0.52);
-    padding: 11px 14px;
+    padding: 9px 14px 9px 12px;
 }
 
 .feedback-item input:focus, 
 .feedback-item textarea:focus {
     outline: none;
     border: 2px solid rgba(46, 136, 228, 0.52);
-    padding: 11px 14px;
+    padding: 9px 14px 9px 12px;
 }
 
 .feedback-item input:active, 
 .feedback-item textarea:active {
     border: 1px solid rgba(178, 178, 178, 0.52);
-    padding: 12px 15px;
+    padding: 10px 16px 10px 14px;
 }
 
 .modal-feedback .button {
     align-self: flex-end;
+    margin-top: 6px;
+    padding: 8px 25px 12px 23px;
 }
 
 /* catalog page */
@@ -1472,7 +1474,7 @@ a.academy-logo {
 
 .catalog-item-header {
     margin: 10px 0 45px;
-    padding: 0 25px;
+    padding: 0 20px;
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
@@ -1493,22 +1495,30 @@ a.academy-logo {
     margin: 0;
     position: absolute;
     left: 13px;
-    bottom: 143px;
+    bottom: 144px;
 }
 
 .catalog-item-header a {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    text-decoration: underline rgba(255, 255, 255, 0.4);
     color: #ffffff;
+}
+
+.header-link span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.header-link:hover span,
+.header-link:focus span,
+.header-link:active span {
+    border-bottom-color: rgba(255, 188, 158, 0.3);
 }
 
 .catalog-item-header a:hover, 
 .catalog-item-header a:focus, 
 .catalog-item-header a:active {
     color: #ffbc9e;
-    text-decoration-color: rgba(255, 188, 158, 0.3);
 }
 
 .price {
@@ -1525,7 +1535,7 @@ a.academy-logo {
 
 .catalog-btn {
     opacity: 0;
-    padding: 8px 23px 15px;
+    padding: 8px 18px 15px;
     text-decoration: none;
     position: absolute;
     bottom: 18px;
