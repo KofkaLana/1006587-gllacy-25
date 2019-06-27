@@ -852,13 +852,22 @@ a.basket-btn {
 .feedback {
     position: relative;
     max-width: 1200px;
+    min-height: 430px;
     margin: 0 auto;
+    
+    background: #ede6c9 url("../img/map.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.feedback iframe {
+    border: none;
 }
 
 .address {
     position: absolute;
     width: 250px;
-    padding: 25px 25px;
+    padding: 28px 27px;
     top: 63px;
     right: 27px;
     color: #000000;
@@ -867,7 +876,7 @@ a.basket-btn {
 }
 
 .contacts-block-item {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .contacts-block-label {
@@ -884,11 +893,16 @@ a.basket-btn {
     color: #000000;
 }
 
+.contacts-phone {
+    margin-bottom: 27px;
+}
+
 .feedback-btn {
     width: 100%;
-    padding: 12px 23px;
-    display: block;
+    padding: 9px 0px 11px;
+    
     box-sizing: border-box;
+    border-radius: 25px;
 }
 
 /* подвал */
