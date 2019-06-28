@@ -108,22 +108,22 @@
     <section class="slider">
       <div class="container">
         <ul class="slider-controls">
-          <li><button class="controls-btn active-btn">Первый слайд</button></li>
-          <li><button class="controls-btn">Второй слайд</button></li>
-          <li><button class="controls-btn">Третий слайд</button></li>
+          <li><button class="controls-btn" onclick="currentSlide(1)">Первый слайд</button></li>
+          <li><button class="controls-btn" onclick="currentSlide(2)">Второй слайд</button></li>
+          <li><button class="controls-btn" onclick="currentSlide(3)">Третий слайд</button></li>
         </ul>
         <ul class="slider-list">
-          <li class="slide slide-show">
+          <li class="slide" data-color="#849d8f">
             <img src="img/slide-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
             <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
-          <li class="slide">
+          <li class="slide" data-color="#8f9cac">
             <img src="img/slide-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
             <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2>
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
-          <li class="slide">
+          <li class="slide" data-color="#a18e87">
             <img src="img/slide-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
             <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
             <a class="button slide-button" href="#">Давайте оба!</a>

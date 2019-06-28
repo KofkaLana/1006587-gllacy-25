@@ -178,7 +178,7 @@ img {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin: 0 0 17px;
+    margin: -2px 0 17px;
 }
 
 .sub-menu li:first-child {
@@ -579,6 +579,24 @@ a.basket-btn {
 
 /* slider */
 
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
 .slider .container {
     position: relative;
 }
@@ -602,6 +620,10 @@ a.basket-btn {
 
 .slide-show {
     display: block;
+    -webkit-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
 }
 
 .slider-list img {
@@ -610,7 +632,7 @@ a.basket-btn {
     left: 0;
     right: 0;
     margin: 0 auto;
-    z-index: -1;
+    z-index: -2;
 }
 
 .slide-title {
@@ -1461,7 +1483,7 @@ a.academy-logo {
 /* фильтры */
 
 .search {
-    margin-bottom: 33px;
+    margin-bottom: 36px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
@@ -1957,7 +1979,7 @@ fieldset.toppings {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin: 46px 0 29px;
+    margin: 49px 0 29px;
     padding: 0;
     line-height: 24px;
     list-style: none;

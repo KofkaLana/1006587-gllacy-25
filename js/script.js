@@ -1,3 +1,35 @@
+// Slider
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+/* Устанавливает текущий слайд */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+/* Основная функция слайдера */
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    var slideBtn = document.getElementsByClassName("controls-btn");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].className = slides[i].className.replace(" slide-show", "");
+    }
+    for (i = 0; i < slideBtn.length; i++) {
+        slideBtn[i].className = slideBtn[i].className.replace(" active-btn", "");
+    }
+    slides[slideIndex - 1].className += " slide-show";
+    slideBtn[slideIndex - 1].className += " active-btn";
+}
+
+
 // modal-feedback 
 
 var open = document.querySelector(".feedback-btn");
