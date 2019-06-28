@@ -552,7 +552,7 @@ a.basket-btn {
 }
 
 .slide-title {
-    width: 675px;
+    width: 705px;
     margin: 0 auto 32px;
     padding-top: 274px;
     font-size: 60px;
@@ -619,7 +619,7 @@ a.basket-btn {
     display: flex;
     flex-direction: column;
     width: 560px;
-    padding: 15px 18px 23px;
+    padding: 15px 9px 23px 18px;
     border-radius: 16px;
 }
 
@@ -635,6 +635,7 @@ a.basket-btn {
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
+    /* letter-spacing: -0.1px; */
 }
 
 .promo-1 {
@@ -647,8 +648,8 @@ a.basket-btn {
 }
 
 .promo .button {
-    margin-right: 5px;
-    padding: 10px 21px 12px 22px;
+    margin-right: 12px;
+    padding: 10px 23px 12px 22px;
     align-self: flex-end;
 }
 
@@ -704,7 +705,7 @@ a.basket-btn {
 
 .feature-item {
     position: relative;
-    width: 483px;
+    width: 482px;
     padding-left: 57px;
     margin-bottom: 22px;
 }
@@ -712,7 +713,7 @@ a.basket-btn {
 .feature-item::before {
     position: absolute;
     top: -11px;
-    left: 0;
+    left: -1px;
     display: block;
     width: 49px;
     height: 49px;
@@ -781,14 +782,22 @@ a.basket-btn {
     line-height: 30px;
     font-weight: 700;
     color: #000000;
-    text-decoration: underline #000000;
+}
+
+.blog-news-link span {
+    border-bottom: 2px solid #000000;
 }
 
 .blog a:hover, 
 .blog a:focus, 
 .blog a:active {
     color: #ffbc9e;
-    text-decoration-color: rgba(255, 188, 158, 0.3);
+}
+
+.blog-news-link:hover span,
+.blog-news-link:focus span,
+.blog-news-link:active span {
+    border-bottom-color: rgba(255, 188, 158, 0.3);
 }
 
 .subscribe {
@@ -874,8 +883,7 @@ a.basket-btn {
     align-self: center;
     width: 250px;
     padding: 28px 27px;
-    top: 63px;
-    right: 27px;
+    
     color: #000000;
     background-color: #fdfdfd;
     border-radius: 15px;
@@ -897,6 +905,12 @@ a.basket-btn {
     line-height: 24px;
     font-style: normal;
     color: #000000;
+}
+
+a.contacts-block-info:hover,
+a.contacts-block-info:focus,
+a.contacts-block-info:active {
+    color: #e84d37;
 }
 
 .contacts-phone {
@@ -925,10 +939,11 @@ a.basket-btn {
 
 .footer-social {
     width: 270px;
+    margin: 12px 0px 0px 1px;
 }
 
 .footer-social ul {
-    margin: 3px 4px -7px 1px;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -960,14 +975,14 @@ a.basket-btn {
 }
 
 .footer-middle {
-    margin: 0 auto;
+    margin: 7px auto 1px;
     width: 560px;
 }
 
 .footer-menu {
     display: flex;
     flex-wrap: wrap;
-    margin: 7px 0 0 107px;
+    margin: 0 0 0 107px;
     padding: 0;
     list-style: none;
 }
@@ -1008,8 +1023,8 @@ a.basket-btn {
 
 .footer-menu li.provider::before {
     position: absolute;
-    top: 4px;
-    left: -22px;
+    top: 5px;
+    left: -20px;
     content: "";
     width: 15px;
     height: 13px;
@@ -1017,13 +1032,14 @@ a.basket-btn {
 }
 
 .footer-copyright {
-    font-size: 12px;
     margin-left: auto;
+    margin-top: 2px;
+    font-size: 12px;
 }
 
 a.academy-logo {
     display: block;
-    margin: -5px 0 4px 1px;
+    margin: -5px 0 5px 1px;
     border-bottom: none;
 }
 
@@ -1195,7 +1211,7 @@ a.academy-logo {
 }
 
 .page-title {
-    margin: 4px 0 26px;
+    margin: 4px 0 25px;
     font-size: 35px;
     line-height: 41px;
 }
@@ -1256,7 +1272,7 @@ a.academy-logo {
 /* фильтры */
 
 .search {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
@@ -1616,14 +1632,14 @@ fieldset.toppings {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 294px;
+    width: 293px;
     margin-bottom: -44px;
     padding-bottom: 35px;
 }
 
 .catalog-item-header {
     margin: 12px 0 44px;
-    padding: 0 20px;
+    padding: 0 19px;
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
@@ -1639,14 +1655,14 @@ fieldset.toppings {
 .catalog-list li:nth-child(4n), 
 .hits-list li:nth-child(4n) {
     margin-right: 0;
-    margin-left: -3px;
+   
 }
 
 .catalog-item .cost {
     margin: 0;
     position: absolute;
-    left: 12px;
-    bottom: 141px;
+    left: 11px;
+    bottom: 143px;
     text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -1719,7 +1735,7 @@ fieldset.toppings {
 .pagination-list {
     display: flex;
     justify-content: flex-end;
-    margin: 48px 0 29px;
+    margin: 46px 0 29px;
     padding: 0;
     line-height: 24px;
     list-style: none;
@@ -1732,8 +1748,8 @@ fieldset.toppings {
 .pagination-item a {
     display: block;
     text-align: center;
-    width: 26px;
-    height: 26px;
+    width: 25px;
+    height: 25px;
     color: #ffffff;
 }
 
@@ -1757,4 +1773,15 @@ fieldset.toppings {
     color: #000000;
     background-color: #ffffff;
     border-radius: 50%;
+}
+
+/* footer */
+
+.inner-footer {
+    padding-top: 0;
+}
+
+.inner-footer .container {
+    padding: 23px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
