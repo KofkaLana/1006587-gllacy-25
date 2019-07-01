@@ -2,10 +2,15 @@
 
 var slideIndex = 1;
 showSlides(slideIndex);
+var mainContainer = document.querySelector("body");
+var bodyColor;
 
 /* Устанавливает текущий слайд */
-function currentSlide(n) {
+function currentSlide(n, slides) {
+    slides = Array.from(document.getElementsByClassName("slide"));
     showSlides(slideIndex = n);
+    bodyColor = slides[n - 1].getAttribute("data-color");
+    mainContainer.style.background = bodyColor;
 }
 
 /* Основная функция слайдера */
@@ -14,7 +19,7 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("slide");
     var slideBtn = document.getElementsByClassName("controls-btn");
     if (n > slides.length) {
-      slideIndex = 1
+        slideIndex = 1
     }
     if (n < 1) {
         slideIndex = slides.length
