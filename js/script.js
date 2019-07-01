@@ -1,11 +1,10 @@
-// Slider
+/* Slider */
 
 var slideIndex = 1;
 showSlides(slideIndex);
 var mainContainer = document.querySelector("body");
 var bodyColor;
 
-/* Устанавливает текущий слайд */
 function currentSlide(n, slides) {
     slides = Array.from(document.getElementsByClassName("slide"));
     showSlides(slideIndex = n);
@@ -13,7 +12,6 @@ function currentSlide(n, slides) {
     mainContainer.style.background = bodyColor;
 }
 
-/* Основная функция слайдера */
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("slide");
@@ -35,7 +33,7 @@ function showSlides(n) {
 }
 
 
-// modal-feedback 
+/* modal-feedback */
 
 var open = document.querySelector(".feedback-btn");
 var popup = document.querySelector(".modal");
