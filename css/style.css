@@ -580,24 +580,6 @@ a.basket-btn {
 
 /* slider */
 
-@-webkit-keyframes fade {
-    from {
-        opacity: 0.4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.4
-    }
-    to {
-        opacity: 1
-    }
-}
-
 .slider .container {
     position: relative;
 }
@@ -621,10 +603,6 @@ a.basket-btn {
 
 .slide-show {
     display: block;
-    -webkit-animation-name: fade;
-    animation-name: fade;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
 }
 
 .slider-list img {
