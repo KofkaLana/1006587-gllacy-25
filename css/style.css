@@ -728,7 +728,7 @@ a.cart-btn {
 /* Hits */
 
 .hits-wrapper {
-    max-width: 1176px;
+    max-width: 1173px;
     padding: 0;
     margin: 0 auto;
 }
@@ -748,7 +748,7 @@ a.cart-btn {
     position: absolute;
     width: 61px;
     height: 61px;
-    top: 3px;
+    top: 5px;
     left: 14px;
     content: "";
     background: #ffffff url("../img/hit.jpg");
@@ -758,7 +758,7 @@ a.cart-btn {
 /* Features */
 
 .features {
-    margin-top: -8px;
+    margin-top: -9px;
     color: #000000;
 }
 
@@ -794,7 +794,7 @@ a.cart-btn {
 .feature-item::before {
     position: absolute;
     top: -13px;
-    left: -2px;
+    left: -1px;
     display: block;
     width: 49px;
     height: 49px;
@@ -943,7 +943,7 @@ a.cart-btn {
 
 .subscribe .button {
     padding: 8px 18px 11px;
-    margin-left: 13px;
+    margin-left: 12px;
     margin-right: 2px;
 }
 
@@ -1023,7 +1023,7 @@ a.contacts-block-info:active {
 }
 
 .contacts-phone {
-    margin-bottom: 26px;
+    margin-bottom: 25px;
 }
 
 .feedback-btn {
@@ -1558,7 +1558,7 @@ a.academy-logo {
     vertical-align: top;
     width: 30px;
     margin-right: -2px;
-    padding-left: 3px;
+    padding-left: 4px;
 }
 
 .price-controls input {
@@ -1702,8 +1702,7 @@ fieldset.toppings {
     min-width: 30px;
     margin-right: 20px;
     margin-bottom: 5px;
-    padding-left: 32px;
-    
+    padding-left: 32px; 
 }
 
 .checkbox-list .filter-option:nth-child(2) {
@@ -1725,7 +1724,7 @@ fieldset.toppings {
 .filter-input-radio + label::before {
     position: absolute;
     top: -1px;
-    left: -1px;
+    left: 0px;
     content: "";
     width: 14px;
     height: 14px;
@@ -1737,7 +1736,7 @@ fieldset.toppings {
 .filter-input-radio:checked + label::after {
     position: absolute;
     top: -1px;
-    left: -1px;
+    left: 0px;
     content: "";
     width: 22px;
     height: 22px;
@@ -1851,7 +1850,7 @@ fieldset.toppings {
             flex-direction: column;
     position: relative;
     width: 293px;
-    margin-bottom: -45px;
+    margin-bottom: -44px;
     padding-bottom: 35px;
 }
 
@@ -1961,7 +1960,7 @@ fieldset.toppings {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin: 46px 8px 31px 0;
+    margin: 46px 6px 31px 0;
     padding: 0;
     line-height: 18px;
     font-weight: 500;
@@ -1980,7 +1979,7 @@ fieldset.toppings {
 }
 
 .pagination-list::before {
-    right: 188px;
+    right: 190px;
     background: url("../img/icon-right-small.svg");
     opacity: 0.2;
     -webkit-transform: rotate(180deg);
@@ -1989,7 +1988,7 @@ fieldset.toppings {
 }
 
 .pagination-list::after {
-    right: 7px;
+    right: 8px;
     background: url("../img/icon-right-small.svg");
 }
 
@@ -2037,6 +2036,6 @@ fieldset.toppings {
 }
 
 .inner-footer .container {
-    padding: 21px 0 0;
+    padding: 23px 0 0;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
