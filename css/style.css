@@ -828,7 +828,7 @@ a.cart-btn {
 /* Blog and subscribe */
 
 .wrapper {
-    margin: 40px 0 38px;
+    margin: 40px 0;
 }
 
 .wrapper .container {
@@ -985,7 +985,7 @@ a.cart-btn {
     width: 250px;
     padding: 29px 27px;
     position: absolute;  /*  Для IE  */
-    top: 63px;           /*  Для IE  */
+    top: 61px;           /*  Для IE  */
     right: 27px;         /*  Для IE  */
     
     color: #000000;
@@ -1037,7 +1037,7 @@ a.contacts-block-info:active {
 /* Footer */
 
 .main-footer {
-    padding: 23px 0;
+    padding: 21px 0 23px;
     font-size: 13px;
     line-height: 18px;
 }
