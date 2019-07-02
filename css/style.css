@@ -39,7 +39,6 @@ a {
 }
 
 img {
-    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -468,7 +467,7 @@ a.order {
     background-color: #f7f6f3;
 }
 
-.basket-full {
+.cart-full {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -484,14 +483,14 @@ a.order {
     color: #323232;
 }
 
-.basket-list {
+.cart-list {
     position: relative;
     margin: 0;
     padding: 0 9px;
     list-style: none;
 }
 
-.basket-list::after {
+.cart-list::after {
     position: absolute;
     bottom: -5px;
     left: 2px;
@@ -501,7 +500,7 @@ a.order {
     background-color: #cacac7;
 }
 
-.basket-item {
+.cart-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -571,7 +570,7 @@ a.order-img {
     font-weight: 700;
 }
 
-a.basket-btn {
+a.cart-btn {
     margin-top: 13px;
     padding: 10px 15px;
 }
@@ -606,6 +605,7 @@ a.basket-btn {
 }
 
 .slider-list img {
+    display: block;
     position: absolute;
     top: -116px;
     left: 0;
@@ -758,14 +758,14 @@ a.basket-btn {
 /* Features */
 
 .features {
-    margin-top: -9px;
+    margin-top: -8px;
     color: #000000;
 }
 
 .features .container {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 23px 20px 4px;
+    padding: 24px 20px 3px;
     background: #ede0c6 url("../img/waffle.jpg");
     border-radius: 16px;
 }
@@ -786,15 +786,15 @@ a.basket-btn {
 
 .feature-item {
     position: relative;
-    width: 482px;
-    padding-left: 57px;
+    width: 483px;
+    padding-left: 56px;
     margin-bottom: 22px;
 }
 
 .feature-item::before {
     position: absolute;
-    top: -11px;
-    left: -1px;
+    top: -13px;
+    left: -2px;
     display: block;
     width: 49px;
     height: 49px;
@@ -819,7 +819,7 @@ a.basket-btn {
 
 .features .title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
@@ -828,7 +828,7 @@ a.basket-btn {
 /* Blog and subscribe */
 
 .wrapper {
-    margin: 40px 0;
+    margin: 40px 0 38px;
 }
 
 .wrapper .container {
@@ -853,14 +853,14 @@ a.basket-btn {
 
 .blog {
     width: 520px;
-    padding: 20px;
+    padding: 22px 20px 18px;
     color: #000000;
     background: #ffffff url("../img/strawberry.jpg") no-repeat 17% 39%;
     border-radius: 16px;
 }
 
 .blog .blog-news {
-    margin: 0 0 -8px;
+    margin: 0 0 -10px;
     font: inherit;
 }
 
@@ -904,7 +904,7 @@ a.basket-btn {
 }
 
 .subscribe-wrapper {
-    padding: 27px 22px 35px 21px;
+    padding: 27px 20px 35px 21px;
     background-color: #f8f7f4;
     border-radius: 16px;
 }
@@ -944,6 +944,7 @@ a.basket-btn {
 .subscribe .button {
     padding: 8px 18px 11px;
     margin-left: 13px;
+    margin-right: 2px;
 }
 
 /* Map and contacts */
@@ -1051,12 +1052,8 @@ a.contacts-block-info:active {
 }
 
 .footer-social {
-    width: 270px;
+    width: 300px;
     margin: 12px 0px 0px 1px;
-}
-
-.footer-social ul {
-    margin: 0;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1092,19 +1089,15 @@ a.contacts-block-info:active {
     border: 3px solid rgba(255, 255, 255, 0.9);
 }
 
-.footer-middle {
-    margin: 7px auto 1px;
-    width: 560px;
-}
-
 .footer-menu {
+    width: 380px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 0 0 107px;
-    padding: 0;
+    margin: 8px auto 2px;
+    padding: 0 80px;
     list-style: none;
 }
 
@@ -1144,7 +1137,7 @@ a.contacts-block-info:active {
 
 .footer-menu li.provider::before {
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: -20px;
     content: "";
     width: 15px;
@@ -1160,7 +1153,7 @@ a.contacts-block-info:active {
 
 a.academy-logo {
     display: block;
-    margin: -5px 0 5px 1px;
+    margin: -5px 0 1px 1px;
     border-bottom: none;
 }
 
@@ -1858,7 +1851,7 @@ fieldset.toppings {
             flex-direction: column;
     position: relative;
     width: 293px;
-    margin-bottom: -44px;
+    margin-bottom: -45px;
     padding-bottom: 35px;
 }
 
@@ -1873,6 +1866,7 @@ fieldset.toppings {
 }
 
 .catalog-item img {
+    display: block;
     margin: 5px auto 0;
     border-radius: 50%;
 }
@@ -1886,8 +1880,8 @@ fieldset.toppings {
 .catalog-item .cost {
     margin: 0;
     position: absolute;
-    left: 11px;
-    bottom: 143px;
+    left: 12px;
+    top: 214px;
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
@@ -1967,7 +1961,7 @@ fieldset.toppings {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin: 43px 8px 31px 0;
+    margin: 46px 8px 31px 0;
     padding: 0;
     line-height: 18px;
     font-weight: 500;
@@ -2018,7 +2012,7 @@ fieldset.toppings {
 }
 
 .pagination-item-disabled a {
-    color: rgb(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.2);
 }
 
 .pagination-item-current a {
@@ -2028,7 +2022,7 @@ fieldset.toppings {
 
 .pagination-item a[href]:hover, 
 .pagination-item a[href]:focus {
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .pagination-item a[href]:active {
@@ -2043,6 +2037,6 @@ fieldset.toppings {
 }
 
 .inner-footer .container {
-    padding: 23px 0 0;
+    padding: 21px 0 0;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
